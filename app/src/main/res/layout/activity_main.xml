@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    tools:context="com.fajarzky.finalprojectquiz.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/quiz_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="64dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/pertanyaan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Materi apa yang sekarang dipelajari?"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/pertanyaan1_jawaban1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="#fff"
+                android:text="User Input" />
+
+            <RadioButton
+                android:id="@+id/pertanyaan1_jawaban2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="#fff"
+                android:text="Database" />
+
+            <RadioButton
+                android:id="@+id/pertanyaan1_jawaban3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:textColor="#fff"
+                android:text="UI/UX" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/pertanyaan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/pertanyaan2_jawaban"
+            android:paddingTop="16dp"
+            android:text="2. Berapa hari training Netvlops Bootcamp diadakan?"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pertanyaan2_jawaban"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/pertanyaan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="3. Materi apa saja yang di jelaskan dalam materi User Input?"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <CheckBox
+            android:id="@+id/pertanyaan3_jawaban1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Radio Button"/>
+
+        <CheckBox
+            android:id="@+id/pertanyaan3_jawaban2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Layout"/>
+
+        <CheckBox
+            android:id="@+id/pertanyaan3_jawaban3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Search View"/>
+
+        <Button
+            android:id="@+id/submit_jawaban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="submitJawaban"/>
+
+    </LinearLayout>
+
+</ScrollView>
